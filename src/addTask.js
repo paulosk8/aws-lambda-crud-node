@@ -12,6 +12,7 @@ exports.addTask = async (event) => {
     title,
     description,
     createAT,
+    done: false,
   };
   await dynamodb
     .put({
